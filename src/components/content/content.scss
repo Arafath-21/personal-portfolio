@@ -1,0 +1,81 @@
+@use '../../styles/index.scss' as *;
+@import '../../../custom.scss';
+
+#content {
+  background-color: $primary;
+  padding-top: 130px;
+  padding-bottom: 20px;
+    .hero-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;   
+      font-family: $font-family-base;   
+      .hero-content {
+        text-align: center;
+        padding-right: 245px;
+
+        @include breakpoint-down(medium){
+          padding: 0;
+        }
+        .hero-name {
+          font-size: 42px;
+          font-weight: 900;
+          letter-spacing: 8px;
+          @include breakpoint-down(small){
+            font-size: 22px;
+            letter-spacing: 4px;
+            font-weight: normal;
+          }
+          &--name2 {
+            color: $fourth;
+          }
+        }
+        .hero-typedAnimation {
+          font-size: 28px;
+          margin-top: 10px;
+          font-weight: 600;
+
+          @include breakpoint-down(small){
+            font-size: 22px;
+            font-weight: normal;
+          }
+        }
+        .buttons{
+          margin: 11px 0;
+          .btn{
+            margin-inline: 9px;
+            padding: 8px 18px;
+            color: black;
+            border-color: black;
+            font-weight: 900;
+
+            @include breakpoint-down(small){
+              margin: 5px;
+              font-weight: normal;
+              margin-right: 5px;
+            }
+
+            a{
+              text-decoration: none;
+              color: black;
+            }
+            &:hover{
+              color: $black;
+              border-color: $fourth;
+              background-color: $fourth;
+            }
+          }
+          
+        }
+      }
+      .hero__col-2 {
+        .ill-img {
+          transform: scale(1.2);
+
+          @include breakpoint-down(small){
+            transform: scale(1);
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,55 @@
+@use '../../styles/index.scss' as *;
+@import '../../../custom.scss';
+
+
+.about{
+    padding-top: 120px;
+    background-color: $primary;
+    padding-left: 120px;
+    @include breakpoint-down(medium){
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+    .wrapper{
+        width: 300px;
+        height: 700px;
+        @include breakpoint-down(medium){
+            width: 150px;
+            height: 350px;
+        }
+    
+        img{
+            width: 100%;
+            @include breakpoint-down(medium){
+                width: 100%;
+            }
+        }
+    }
+    .wrapper-desc{
+        font-size: 21px;  
+        padding-top: 15px;    
+        @include breakpoint-down (medium){
+            font-size: 16px;
+            padding-top: 5px;
+        }  
+    }
+
+    .ic-div{
+        display: flex;
+        justify-content: space-around;
+        .icons{
+            padding: 20px;
+            font-size: 40px;
+            @include breakpoint-down(medium){
+                font-size: 20px;
+            }
+        }
+    }
+}
+.fesc{
+    padding-left: 120px;
+    @include breakpoint-down(medium){
+        // padding-left: 120px;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,57 @@
+@use '../../styles/index.scss' as *;
+@import '../../../custom.scss';
+
+.navbar{
+    background-color: $primary;
+    .menu{
+        &__brand{
+            font-family: $font-family-brand;
+            font-size: 35px;
+            font-weight: 700; 
+        }
+        &--links{
+            font-size: 18px;
+            font-family: $font-family-base;
+            font-weight: 600;
+            padding: 12px;
+
+            @include breakpoint-down(small){
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                font-size: 15px;   
+            }
+            .nav-item{
+                margin-right: 18px;
+
+                @include breakpoint-down(small){
+                    margin: 0;
+                }
+                .nav-link{
+                    i{                        
+                        @include breakpoint-down(small){
+                            display: none;
+                        }
+                    }
+                }
+                .nav-link:hover{
+
+                    @include breakpoint-down(small){
+                        width: 42px;
+                        transition: none;
+                        padding: 0;
+                        margin: 0;
+                        font-size: 12px;
+                        font-weight: normal;
+                        transition: none;
+                    }
+                    padding: 0;
+                    color: $fourth;
+                    border-bottom: 4px solid $fourth;
+                    transition: all 0.5s ease-out;
+                }
+            }
+        }
+    }
+}
+
