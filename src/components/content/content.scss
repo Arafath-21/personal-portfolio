@@ -3,8 +3,11 @@
 
 #content {
   background-color: $primary;
-  padding-top: 130px;
-  padding-bottom: 20px;
+  padding-top: 280px;
+  padding-bottom: 135px;
+    @include breakpoint-down(small){
+      padding-top: 100px;
+    }
     .hero-wrapper {
       display: flex;
       justify-content: center;
@@ -18,9 +21,9 @@
           padding: 0;
         }
         .hero-name {
-          font-size: 42px;
+          font-size: 52px;
           font-weight: 900;
-          letter-spacing: 8px;
+          letter-spacing: 5px;
           @include breakpoint-down(small){
             font-size: 22px;
             letter-spacing: 4px;
@@ -31,7 +34,7 @@
           }
         }
         .hero-typedAnimation {
-          font-size: 28px;
+          font-size: 34px;
           margin-top: 10px;
           font-weight: 600;
 
@@ -67,12 +70,17 @@
           }
           
         }
+        .contact{
+          padding-top: 25px;
+          font-size: 18px;
+          font-weight: bolder;
+        }
       }
       .hero__col-2 {
         .ill-img {
-          transform: scale(1.2);
+          transform: scale(1.8);
 
-          @include breakpoint-down(small){
+          @include breakpoint-down(medium){
             transform: scale(1);
           }
         }

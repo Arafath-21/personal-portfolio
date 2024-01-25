@@ -1,6 +1,19 @@
 import React from 'react'
-import './about.scss'
 import avatar from '../../assets/avatar.jpg'
+import html from '../../assets/html.png'
+import css from '../../assets/css.png'
+import js from '../../assets/js.png'
+import react from '../../assets/react.png'
+import sass from '../../assets/sass.png'
+import bootstrap from '../../assets/bootstrap.png'
+import nodejs from '../../assets/nodejs.png'
+import express from '../../assets/express.png'
+import mongodb from '../../assets/mongodb.png'
+import postman from '../../assets/postman.png'
+import git from '../../assets/git.png'
+import netlify from '../../assets/netlify.png'
+import './about.scss'
+
 const About = () => {
   return <>
   <section className='about'>
@@ -13,21 +26,35 @@ const About = () => {
                  or creating robust full-stack applications, I thrive in the world of coding.</div>
                  <br />
                  <div className="wrapper-desc">I'm always eager to take on new challenges and contribute to innovative projects. If you're looking for a developer who is not only skilled but also passionate about creating exceptional digital experiences, I'd love to connect. Feel free to explore my projects and get in touch for potential collaborations!</div>
-
-                 <div className="ic-div">
-                    <div className="icons"><i class="fa-brands fa-github"></i></div>
-                    <div className="icons"><i class="fa-brands fa-linkedin"></i></div>
-                    <div className="icons"><i class="fa-brands fa-instagram"></i></div>
-                    <div className="icons"><i class="fa-solid fa-envelope"></i></div>
-                    <div className="icons"><i class="fa-solid fa-phone"></i></div>
-                 </div>
-
+            <div className="ic-div">
+                <a href="https://github.com/Arafath-21" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/arafath211199" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:arafathyas21@gmail.com" className="icons"><i className="fa-solid fa-envelope"></i></a>
+                <a href="tel:+91 8428435883" className="icons"><i className="fa-solid fa-phone"></i></a>
+              </div>
             </div>            
             <div className="col-lg-4 col-md-4 fesc">
                 <div className="wrapper">
                     <img src={avatar} alt="" />
                 </div>
-            </div>            
+            </div>        
+            <div className="col-lg-10 col-md-10">
+              <div className="h1 text-center skills fw-bold">My Skills</div>
+              <div className="skill-icon">
+                <div className="ico text-center fw-bold"><img className='pb-2' src={html} alt="" />HTML</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={css} alt="" />CSS</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={js} alt="" />Javascript</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={react} alt="" />React</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={sass} alt="" />Sass</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={bootstrap} alt="" />Bootstrap</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={nodejs} alt="" />Nodejs</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={express} alt="" />Express</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={mongodb} alt="" />Mongodb</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={postman} alt="" />Postman</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={git} alt="" />Git</div>
+                <div className="ico text-center fw-bold"><img className='pb-2' src={netlify} alt="" />Netlify</div>
+              </div>
+            </div>    
         </div>
     </div>
   </section>

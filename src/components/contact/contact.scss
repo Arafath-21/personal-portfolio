@@ -1,0 +1,39 @@
+@use '../../styles/index.scss' as *;
+@import '../../../custom.scss';
+
+.get-started {
+    padding: 80px 0;
+    background-color: $primary;
+}
+
+.form {
+    padding: 50px;
+
+    .buttons{
+        margin: 11px 0;
+        .btn{
+          margin-inline: 9px;
+          padding: 8px 18px;
+          color: black;
+          border-color: black;
+          font-weight: 900;
+
+          @include breakpoint-down(small){
+            margin: 5px;
+            font-weight: normal;
+            margin-right: 5px;
+          }
+
+          a{
+            text-decoration: none;
+            color: black;
+          }
+          &:hover{
+            color: $black;
+            border-color: $fourth;
+            background-color: $fourth;
+          }
+        }
+        
+      }
+}

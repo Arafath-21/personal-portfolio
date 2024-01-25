@@ -12,10 +12,10 @@
     }
     .wrapper{
         width: 300px;
-        height: 700px;
+        height: 500px;
         @include breakpoint-down(medium){
-            width: 150px;
-            height: 350px;
+            width: 250px;
+            height: 450px;
         }
     
         img{
@@ -40,16 +40,42 @@
         .icons{
             padding: 20px;
             font-size: 40px;
+            color: black;
             @include breakpoint-down(medium){
                 font-size: 20px;
             }
+        &:hover{
+            color: $fourth;
+        }    
         }
     }
+    .skills{
+        padding-bottom: 25px;
+    }
+    .skill-icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+
+        .ico {
+            width: 80px;
+            height: 80px;
+            // padding: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            margin: 20px; 
+            flex: 0 0 calc(16.666% - 60px);
+    }
+}
 }
 .fesc{
-    padding-left: 120px;
-    @include breakpoint-down(medium){
-        // padding-left: 120px;
+    @include breakpoint(small){
         padding-top: 10px;
+        margin-left: 120px;
     }
 }
