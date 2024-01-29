@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Typed from 'typed.js';
+import { useNavigate } from 'react-router-dom';
 import { saveAs } from 'file-saver'; // Import saveAs from file-saver
 import avatar from '../../assets/coding-flatline-2715e.png';
 import resume from '../../Files/ArafathCV Resume.pdf'
@@ -8,6 +9,7 @@ import './content.scss';
 // import cv from ''
 
 const Content = () => {
+  const navigate = useNavigate()
   const typedTextRef = useRef(null);
   const animation = useAnimation();
 
@@ -57,11 +59,9 @@ const Content = () => {
                 <div className="btn btn-outline-primary" onClick={handleDownload}>
                   Resume <i className="fa-solid fa-download px-2"></i>
                 </div>
-                {/* <div className="btn btn-outline-primary">
-                  <a href="https://unsplash.com/" target="blank">
-                    My Works <i className="fa-solid fa-person-digging px-2"></i>
-                  </a>
-                </div> */}
+                <div className="btn btn-outline-primary" onClick={() => navigate('/work')}>
+                  My Works <i className="fa-solid fa-person-digging px-2"></i>
+                </div>
               </div>
               <div className="contact">
                 <div className="email">
