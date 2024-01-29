@@ -37,24 +37,26 @@ const About = () => {
                 <div className="wrapper">
                     <img src={avatar} alt="" />
                 </div>
-            </div>        
-            <div className="col-lg-10 col-md-10">
-              <div className="h1 text-center skills fw-bold">My Skills</div>
-              <div className="skill-icon">
-                <div className="ico text-center fw-bold"><img className='pb-2' src={html} alt="" />HTML</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={css} alt="" />CSS</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={js} alt="" />Javascript</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={react} alt="" />React</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={sass} alt="" />Sass</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={bootstrap} alt="" />Bootstrap</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={nodejs} alt="" />Nodejs</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={express} alt="" />Express</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={mongodb} alt="" />Mongodb</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={postman} alt="" />Postman</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={git} alt="" />Git</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={netlify} alt="" />Netlify</div>
-              </div>
-            </div>    
+            </div>     
+            <div className="row">
+              <div className="col-lg-12 col-md-12">
+                <div className="h1 text-center skills fw-bold">My Skills</div>
+                <div className="skill-icon">
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={html} alt="" />HTML</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={css} alt="" />CSS</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={js} alt="" />Javascript</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={react} alt="" />React</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={sass} alt="" />Sass</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={bootstrap} alt="" />Bootstrap</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={nodejs} alt="" />Nodejs</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={express} alt="" />Express</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={mongodb} alt="" />Mongodb</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={postman} alt="" />Postman</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={git} alt="" />Git</div>
+                  <div className="ico text-center fw-bold"><img className='pb-2' src={netlify} alt="" />Netlify</div>
+                </div>
+              </div>    
+            </div>   
         </div>
     </div>
   </section>

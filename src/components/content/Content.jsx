@@ -12,10 +12,10 @@ const Content = () => {
   const animation = useAnimation();
 
   const handleDownload = () => {
-    // Replace 'your_resume.pdf' with the actual filename of your resume
+    // Actual filename of your resume
     const resumeFileName = 'Arafath_resume.pdf';
 
-    // Replace 'path_to_your_resume' with the actual path to your resume file
+    // Actual path to your resume file
     const resumeFilePath = resume;
 
     // Trigger the download using file-saver library

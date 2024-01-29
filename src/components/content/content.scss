@@ -3,10 +3,11 @@
 
 #content {
   background-color: $primary;
-  padding-top: 280px;
-  padding-bottom: 135px;
-    @include breakpoint-down(small){
-      padding-top: 100px;
+  padding-top: 230px;
+  padding-bottom: 235px;
+    @include breakpoint-down(medium){
+      padding-top: 200px;
+      padding-bottom: 300px;
     }
     .hero-wrapper {
       display: flex;
@@ -81,7 +82,7 @@
           transform: scale(1.8);
 
           @include breakpoint-down(medium){
-            transform: scale(1);
+            transform: scale(1.2);
           }
         }
       }
