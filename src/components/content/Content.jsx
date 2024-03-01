@@ -4,7 +4,7 @@ import Typed from 'typed.js';
 import { useNavigate } from 'react-router-dom';
 import { saveAs } from 'file-saver'; // Import saveAs from file-saver
 import avatar from '../../assets/coding-flatline-2715e.png';
-import resume from '../../Files/ArafathCV Resume.pdf'
+import resume from '../../Files/ArafathCVResume.pdf'
 import './content.scss';
 // import cv from ''
 
