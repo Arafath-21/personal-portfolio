@@ -2,6 +2,7 @@ import React from 'react'
 import img from '../../assets/project-1.png'
 import img1 from '../../assets/MergingIdeas.png'
 import img2 from '../../assets/weather.png'
+import img3 from '../../assets/zen class.png'
 import './work.scss'
 
 const Work = () => {
@@ -50,6 +51,21 @@ const Work = () => {
                                 <div className='align-items-center ic-div'>
                                     <a href="https://github.com/Arafath-21/travelblog" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-github px-1"></i>Git</a>            
                                     <a href="https://harmonious-dragon-b81f3f.netlify.app" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-solid fa-globe px-1"></i>Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+                <div className="col-lg-4 col-md-6">                    
+                    <div className="portfolio-box">
+                        <img src={img3} alt="" className=''/>  
+                        <div className="portfolio-info">
+                            <div className="caption">
+                            <div className='h4 fw-bolder'>Zen Class Dashboard</div>
+                            <p className='fw-bold'>MERN</p>
+                                <div className='align-items-center ic-div'>
+                                    <a href="https://github.com/Arafath-21/Zen-class-student-dashboard-frontend" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-github px-1"></i>Git</a>            
+                                    <a href="https://zen-clas-dashboard.netlify.app/" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-solid fa-globe px-1"></i>Demo</a>
                                 </div>
                             </div>
                         </div>
