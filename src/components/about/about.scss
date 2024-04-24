@@ -11,8 +11,8 @@
         padding-top: 150px;
     }
     .wrapper{
-        width: 300px;
-        height: 500px;
+        width: 400px;
+        height: 600px;
         @include breakpoint-down(medium){
             width: 250px;
             height: 450px;

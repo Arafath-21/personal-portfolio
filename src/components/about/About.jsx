@@ -21,9 +21,16 @@ const About = () => {
         <div className="row d-flex">
             <div className="col-lg-8 col-md-8">
                 <div className="h1 fw-bold">About Me</div>
-                <div className='wrapper-desc'>Hello! I'm Arafath,I have 2+ years of experience as a COBOL devloper & a passionate and versatile developer
-                 with expertise in various aspects of web development. Whether it's crafting beautiful UI's, handling server-side logic,
-                 or creating robust full-stack applications, I thrive in the world of coding.</div>
+                <div className='wrapper-desc'>Proficient in <b>Visual COBOL mainframe development</b> for over <b>16 Months</b>.
+Extensive hands-on experience with <b>DB2 databases</b>, including design and optimization.
+Skilled in version control using <b>GitLab</b> for efficient code management.
+Collaborated effectively with cross-functional teams to deliver high-quality solutions.
+Strong <b>problem-solving</b> abilities in troubleshooting complex mainframe issues.
+<br />
+<b>Frontend Developer</b> with <b>13 months</b> of experience specializing in <b>React.js</b>.
+Developed responsive and user-friendly web interfaces using React.js.
+Collaborated effectively in <b>Agile development</b> environments, contributing to the team's success.
+Demonstrated strong <b>problem-solving</b> skills and adaptability in <b>fast-paced project</b> settings.</div>
                  <br />
                  <div className="wrapper-desc">I'm always eager to take on new challenges and contribute to innovative projects. If you're looking for a developer who is not only skilled but also passionate about creating exceptional digital experiences, I'd love to connect. Feel free to explore my projects and get in touch for potential collaborations!</div>
             <div className="ic-div">
