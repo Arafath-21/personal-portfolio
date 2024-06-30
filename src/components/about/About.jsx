@@ -20,7 +20,7 @@ const About = () => {
     <div className="container">
         <div className="row d-flex">
             <div className="col-lg-8 col-md-8">
-                <div className="h1 fw-bold">About Me</div>
+                <div className="h1 fw-bold text-center">About Me</div>
                 <div className='wrapper-desc'>Proficient in <b>Visual COBOL mainframe development</b> for over <b>16 Months</b>.
 Extensive hands-on experience with <b>DB2 databases</b>, including design and optimization.
 Skilled in version control using <b>GitLab</b> for efficient code management.
@@ -45,26 +45,26 @@ Demonstrated strong <b>problem-solving</b> skills and adaptability in <b>fast-pa
                     <img src={avatar} alt="" />
                 </div>
             </div>     
-            <div className="row">
-              <div className="col-lg-12 col-md-12">
-                <div className="h1 text-center skills fw-bold">My Skills</div>
-                <div className="skill-icon">
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={html} alt="" />HTML</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={css} alt="" />CSS</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={js} alt="" />Javascript</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={react} alt="" />React</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={sass} alt="" />Sass</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={bootstrap} alt="" />Bootstrap</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={nodejs} alt="" />Nodejs</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={express} alt="" />Express</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={mongodb} alt="" />Mongodb</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={postman} alt="" />Postman</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={git} alt="" />Git</div>
-                  <div className="ico text-center fw-bold"><img className='pb-2' src={netlify} alt="" />Netlify</div>
-                </div>
-              </div>    
-            </div>   
         </div>
+        <div className="row">
+          <div className="col-lg-12 col-md-12">
+            <div className="h1 text-center fw-bold skills">My Skills</div>
+            <div className="skill-icon">
+              <div className="ico text-center fw-bold"><img className='pb-2' src={html} alt="" />HTML</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={css} alt="" />CSS</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={js} alt="" />Javascript</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={react} alt="" />React</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={sass} alt="" />Sass</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={bootstrap} alt="" />Bootstrap</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={nodejs} alt="" />Nodejs</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={express} alt="" />Express</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={mongodb} alt="" />Mongodb</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={postman} alt="" />Postman</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={git} alt="" />Git</div>
+              <div className="ico text-center fw-bold"><img className='pb-2' src={netlify} alt="" />Netlify</div>
+            </div>
+          </div>    
+        </div>   
     </div>
   </section>
   </>

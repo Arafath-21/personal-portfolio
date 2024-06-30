@@ -3,11 +3,11 @@
 
 #content {
   background-color: $primary;
-  padding-top: 230px;
-  padding-bottom: 235px;
+  padding-top: 180px;
+  padding-bottom: 96px;
     @include breakpoint-down(medium){
-      padding-top: 200px;
-      padding-bottom: 300px;
+      // padding-top: 95px;
+      // padding-bottom: 85px;
     }
     .hero-wrapper {
       display: flex;
@@ -20,13 +20,14 @@
 
         @include breakpoint-down(medium){
           padding: 0;
+          display: block;
         }
         .hero-name {
           font-size: 52px;
           font-weight: 900;
           letter-spacing: 5px;
           @include breakpoint-down(small){
-            font-size: 22px;
+            font-size: 24px;
             letter-spacing: 4px;
             font-weight: normal;
           }
@@ -35,28 +36,28 @@
           }
         }
         .hero-typedAnimation {
-          font-size: 34px;
+          font-size: 36px;
           margin-top: 10px;
           font-weight: 600;
 
           @include breakpoint-down(small){
-            font-size: 22px;
+            font-size: 24px;
             font-weight: normal;
           }
         }
         .buttons{
-          margin: 11px 0;
+          margin: 8px 0;
           .btn{
-            margin-inline: 9px;
-            padding: 8px 18px;
+            margin-inline: 8px;
+            padding: 8px 16px;
             color: black;
             border-color: black;
             font-weight: 900;
 
             @include breakpoint-down(small){
-              margin: 5px;
+              margin: 4px;
               font-weight: normal;
-              margin-right: 5px;
+              margin-right: 4px;
             }
 
             a{
@@ -72,8 +73,8 @@
           
         }
         .contact{
-          padding-top: 25px;
-          font-size: 18px;
+          padding-top: 24px;
+          font-size: 20px;
           font-weight: bolder;
         }
       }

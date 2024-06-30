@@ -4,8 +4,11 @@ import Typed from 'typed.js';
 import { useNavigate } from 'react-router-dom';
 import { saveAs } from 'file-saver'; // Import saveAs from file-saver
 import avatar from '../../assets/coding-flatline-2715e.png';
-import resume from '../../Files/Arafaths_CV.pdf'
+import resume from '../../Files/Arafath_cV.pdf'
 import './content.scss';
+import About from '../about/About';
+import Work from '../work/Work';
+import Contact from '../contact/Contact';
 // import cv from ''
 
 const Content = () => {
@@ -15,7 +18,7 @@ const Content = () => {
 
   const handleDownload = () => {
     // Actual filename of your resume
-    const resumeFileName = 'Arafath_resume.pdf';
+    const resumeFileName = 'Arafath_cV.pdf';
 
     // Actual path to your resume file
     const resumeFilePath = resume;
@@ -83,6 +86,9 @@ const Content = () => {
           </div>
         </div>
       </section>
+      <About />
+      <Work />
+      <Contact />
     </>
   );
 };

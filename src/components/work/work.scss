@@ -3,19 +3,26 @@
 
 .portfolio {
     background-color: $primary;
-    padding: 165px 0;
+    padding: 36px 15px; /* Added padding horizontally and vertically */
+}
+
+.portfolio .container {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between items */
+    gap: 20px; /* Control the gap between columns */
 }
 
 .portfolio-box {
     position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
+    width: 100%; /* Ensure each portfolio box takes full width of its column */
+    height: 320px;
     margin-bottom: 20px;
-    border-top: 8px  solid lighten(black, 20%);
+    overflow: hidden;
+    border-top: 8px solid lighten(black, 20%);
     img {
         width: 100%;
         height: 100%;
+        transition: transform 0.5s ease;
     }
 
     .portfolio-info {
@@ -27,11 +34,17 @@
         left: 0;
         opacity: 0;
         visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease, background-color 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .caption {
-        text-align: center;
-        color: $black;
-        @include absoluteCenter;
+            text-align: center;
+            color: $black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             h4 {
                 text-transform: uppercase;
@@ -40,31 +53,41 @@
         }
     }
     &:hover {
+        background-color: white;
 
         img {
             transform: scale(1.5);
-            @include transitionProperty;
         }
+
         .portfolio-info {
-            opacity: 99%;
+            opacity: 1;
             visibility: visible;
-            @include transitionProperty;
+            background-color: white;
+
+            .caption {
+                color: black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 }
-.ic-div{
+
+.ic-div {
     display: flex;
-    justify-content: space-around;
-    .icons{
+    justify-content: center;
+
+    .icons {
         text-decoration: none;
-        padding: 20px;
-        font-size: 20px;
+        padding: 8px;
+        font-size: 15px;
         color: black;
-        @include breakpoint-down(medium){
+        @include breakpoint-down(medium) {
             font-size: 20px;
         }
-    &:hover{
-        color: $fourth;
-    }    
+        &:hover {
+            color: $fourth;
+        }    
     }
 }
