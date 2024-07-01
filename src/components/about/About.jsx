@@ -39,7 +39,7 @@ const About = () => {
               </div>
               <div className="ic-div">
                 <a href="https://github.com/Arafath-21" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/arafath211199" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-linkedin"></i></a>
+                <a href="www.linkedin.com/in/arafathyas" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-linkedin"></i></a>
                 <a href="mailto:arafathyas21@gmail.com" className="icons"><i className="fa-solid fa-envelope"></i></a>
                 <a href="tel:+91 8428435883" className="icons"><i className="fa-solid fa-phone"></i></a>
               </div>
