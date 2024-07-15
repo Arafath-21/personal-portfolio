@@ -5,7 +5,7 @@ import img2 from '../../assets/weather.png'
 import img3 from '../../assets/ZenClass.png'
 import img4 from '../../assets/billtracker.png'
 import img5 from '../../assets/Pizza.png'
-import img6 from '../../assets/Recipe.png'
+import img6 from '../../assets/Recipe_app.png'
 import './work.scss'
 
 const Work = () => {
@@ -70,9 +70,9 @@ const Work = () => {
                             <div className='h4 fw-bolder'>Recipie Blog App</div>
                             <p className='fw-bold'>MERN</p>
                                 <div className='ic-div'>
-                                    <a href="https://github.com/Arafath-21/food-frontend" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-github px-1"></i>Front-End Code</a>            
-                                    <a href="https://github.com/Arafath-21/food-backend" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-github px-1"></i>Back-End Code</a>            
-                                    <a href="https://bejewelled-gingersnap-ab0f4e.netlify.app/" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-solid fa-globe px-1"></i>Demo</a>
+                                    <a href="https://github.com/Arafath-21/Recipe_application_frontend" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-github px-1"></i>Front-End Code</a>            
+                                    <a href="https://github.com/Arafath-21/Recipe_application_backend" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-brands fa-github px-1"></i>Back-End Code</a>            
+                                    <a href="https://spiffy-frangipane-894845.netlify.app/" target="_blank" rel="noopener noreferrer" className="icons"><i className="fa-solid fa-globe px-1"></i>Demo</a>
                                 </div>
                             </div>
                         </div>
