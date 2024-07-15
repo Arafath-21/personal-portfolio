@@ -1,0 +1,39 @@
+@use '../../styles/index.scss' as *;
+@import '../../../custom.scss';
+
+.bg-primary {
+  padding: 100px 0;
+}
+
+.skills {
+  padding: 80px 0;
+  @include breakpoint(small) {
+    padding: 50px 0;
+  }
+}
+
+.skill-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 16px;
+
+  .ico {
+    width: 112px; // Adjust width for consistent icon size
+    height: 112px; // Adjust height for consistent icon size
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+    text-align: center;
+    font-size: 16px;
+
+    img {
+      width: 100%; // Adjust icon size inside each .ico
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

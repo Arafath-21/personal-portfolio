@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import Typed from 'typed.js';
 import { useNavigate } from 'react-router-dom';
-import { saveAs } from 'file-saver'; // Import saveAs from file-saver
+// import { saveAs } from 'file-saver'; // Import saveAs from file-saver
 import avatar from '../../assets/coding-flatline-2715e.png';
-import resume from '../../Files/Arafath.pdf'
+// import resume from '../../Files/Arafath.pdf'
 import './content.scss';
 import About from '../about/About';
 import Work from '../work/Work';
@@ -16,16 +16,16 @@ const Content = () => {
   const typedTextRef = useRef(null);
   const animation = useAnimation();
 
-  const handleDownload = () => {
-    // Actual filename of your resume
-    const resumeFileName = 'Arafath_Resume.pdf';
+  // const handleDownload = () => {
+  //   // Actual filename of your resume
+  //   const resumeFileName = 'Arafath_Resume.pdf';
 
-    // Actual path to your resume file
-    const resumeFilePath = resume;
+  //   // Actual path to your resume file
+  //   const resumeFilePath = resume;
 
-    // Trigger the download using file-saver library
-    saveAs(resumeFilePath, resumeFileName);
-  };
+  //   // Trigger the download using file-saver library
+  //   saveAs(resumeFilePath, resumeFileName);
+  // };
   
 
   useEffect(() => {
@@ -59,11 +59,16 @@ const Content = () => {
               </div>
               <div ref={typedTextRef} className="hero-typedAnimation"></div>
               <div className="buttons">
-                <div className="btn btn-outline-primary" onClick={handleDownload}>
-                  Resume <i className="fa-solid fa-download px-2"></i>
-                </div>
+                <a href="https://drive.google.com/file/d/1tUDU8xwhR4e4qlXQoIaRk98L_JAGOXhX/view" target="_blank" rel="noopener noreferrer">
+                  <div className="btn btn-outline-primary">
+                    Resume <i className="fa-solid fa-download px-2"></i>
+                  </div>
+                </a>
                 <div className="btn btn-outline-primary" onClick={() => navigate('/work')}>
                   My Works <i className="fa-solid fa-person-digging px-2"></i>
+                </div>
+                <div className="btn btn-outline-primary" onClick={() => navigate('/skills')}>
+                  My Skills <i className="fa-solid fa-fill-drip px-2"></i>
                 </div>
               </div>
               <div className="contact">
@@ -73,6 +78,11 @@ const Content = () => {
                 <div className="email">
                   <i className="fa-brands fa-whatsapp px-2"></i>Contact : +91 8428435883
                 </div>
+              </div>
+              <div className="buttons">
+              <div className="btn btn-outline-primary" onClick={() => navigate('/certifications')}>
+                  Certifications <i className="fa-solid fa-certificate px-2"></i>
+                </div>                
               </div>
             </div>
             <motion.div

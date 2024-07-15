@@ -1,17 +1,6 @@
 import React from 'react';
 import avatar from '../../assets/avatar.jpg';
-import html from '../../assets/html.png';
-import css from '../../assets/css.png';
-import js from '../../assets/js.png';
-import react from '../../assets/react.png';
-import sass from '../../assets/sass.png';
-import bootstrap from '../../assets/bootstrap.png';
-import nodejs from '../../assets/nodejs.png';
-import express from '../../assets/express.png';
-import mongodb from '../../assets/mongodb.png';
-import postman from '../../assets/postman.png';
-import git from '../../assets/git.png';
-import netlify from '../../assets/netlify.png';
+import Skills from '../skills/Skills';
 import './about.scss';
 
 const About = () => {
@@ -50,25 +39,8 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-12 col-md-12">
-              <div className="h1 text-center fw-bold skills">My Skills</div>
-              <div className="skill-icon">
-                <div className="ico text-center fw-bold"><img className='pb-2' src={html} alt="" />HTML</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={css} alt="" />CSS</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={js} alt="" />Javascript</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={react} alt="" />React</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={sass} alt="" />Sass</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={bootstrap} alt="" />Bootstrap</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={nodejs} alt="" />Nodejs</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={express} alt="" />Express</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={mongodb} alt="" />Mongodb</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={postman} alt="" />Postman</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={git} alt="" />Git</div>
-                <div className="ico text-center fw-bold"><img className='pb-2' src={netlify} alt="" />Netlify</div>
-              </div>
-            </div>
-          </div>
+          <Skills />
+          
         </div>
       </section>
     </>
