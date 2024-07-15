@@ -31,10 +31,10 @@ const TopBar = () => {
               <a className="nav-link" href="#" onClick={(event) => handleNavigation(event, '/work')}><i className="fa-solid fa-briefcase px-1"></i>Work</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={(event) => handleNavigation(event, '/skills')}><i className="fa-solid fa-briefcase px-1"></i>Skills</a>
+              <a className="nav-link" href="#" onClick={(event) => handleNavigation(event, '/skills')}><i className="fa-solid fa-certificate px-1"></i>Skills</a>
             </li>        
             <li className="nav-item">
-              <a className="nav-link" href="#" onClick={(event) => handleNavigation(event, '/certifications')}><i className="fa-solid fa-briefcase px-1"></i>Certifications</a>
+              <a className="nav-link" href="#" onClick={(event) => handleNavigation(event, '/certifications')}><i className="fa-solid fa-fill-drip px-1"></i>Certifications</a>
             </li>            
             <li className="nav-item">
               <a className="nav-link" href="#" onClick={(event) => handleNavigation(event, '/contact')}><i className="fa-solid fa-mobile-retro px-1"></i>Contact</a>
